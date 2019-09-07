@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E8FF7F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminController">
+   <children>
+      <Label fx:id="userLbl" layoutX="215.0" layoutY="61.0" text="Welcome Admin">
+         <font>
+            <Font name="Ubuntu" size="23.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="makeTestBtn" layoutX="201.0" layoutY="184.0" onAction="#handleMakeTest" style="-fx-background-color: #760324;" text="Make Assessment Test" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="publishBtn" layoutX="242.0" layoutY="246.0" onAction="#handlePublishBtn" style="-fx-background-color: #760324;" text="Publish Test" textFill="WHITE">
+         <font>
+            <Font name="Ubuntu" size="17.0" />
+         </font>
+      </JFXButton>
+      <Button fx:id="logoutBtn" layoutX="492.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/logout-button.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Ubuntu" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

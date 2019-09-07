@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E8FF7F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.TestController">
+   <children>
+      <Label fx:id="pStatement" layoutX="36.0" layoutY="72.0" prefHeight="98.0" prefWidth="529.0" style="-fx-background-color: #FFAC55;" text="Problem Statement" />
+      <Label fx:id="qNumber" layoutX="282.0" layoutY="33.0" text="Label" />
+      <JFXRadioButton fx:id="optionA" layoutX="36.0" layoutY="192.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleGroup" />
+         </toggleGroup></JFXRadioButton>
+      <JFXRadioButton fx:id="optionB" layoutX="36.0" layoutY="224.0" toggleGroup="$toggleGroup" />
+      <JFXRadioButton fx:id="optionC" layoutX="36.0" layoutY="257.0" toggleGroup="$toggleGroup" />
+      <JFXRadioButton fx:id="optionD" layoutX="36.0" layoutY="289.0" toggleGroup="$toggleGroup" />
+      <JFXButton fx:id="submitBtn" layoutX="36.0" layoutY="341.0" onAction="#handleProbSubmit" style="-fx-background-color: #760324;" text="Submit Problem" textFill="WHITE" />
+      <JFXButton fx:id="nextBtn" layoutX="503.0" layoutY="341.0" onAction="#handleNextBtn" style="-fx-background-color: #760324;" text="Next" textFill="WHITE" />
+   </children>
+</AnchorPane>
